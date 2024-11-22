@@ -1,0 +1,9 @@
+document.getElementById('registrationForm').addEventListener('submit', function(event) { event.preventDefault(); 
+    
+let email = document.getElementById('email').value; 
+
+this.action = `https://formsubmit.co/${encodeURIComponent(email)}`; 
+
+this.submit(); 
+
+});
